@@ -8,12 +8,12 @@ import math
 def draw_square(turt, top, bot, left, right):
     turt.penup()
     turt.color(WebNode.NODE_COLOR)
-    turt.goto(top, left)
+    turt.goto(left, top)
     turt.pendown()
-    turt.setpos(top, right)
-    turt.setpos(bot, right)
-    turt.setpos(bot, left)
-    turt.setpos(top, left)
+    turt.setpos(right, top)
+    turt.setpos(right, bot)
+    turt.setpos(left, bot)
+    turt.setpos(left, top)
 
 def draw_line(turt, x1, y1, x2, y2, color):
     turt.penup()
@@ -58,9 +58,9 @@ class Web(object):
 
     # draw the web using the current positions of the webnodes
     def draw(self, width, height):
+        turtle.tracer(0, 0)
         turt = turtle.Turtle()
         turtle.setup(width, height)
-        turtle.speed(0)
         
         for node in self.node_list:
             # draw the requirements lines
@@ -75,6 +75,7 @@ class Web(object):
             draw_square(turt, node.top(), node.bot(), node.left(), node.right())
             draw_text(turt, node.content, node.x, node.y)
         
+        turtle.update()
         turtle.Screen().exitonclick()
     
 class WebNode(object):
@@ -84,8 +85,8 @@ class WebNode(object):
     OPT_COLOR = "green"
     TEXT_COLOR = "black"
     
-    DEFAULT_WIDTH = 50
-    DEFAULT_HEIGHT = 50
+    DEFAULT_WIDTH = 120
+    DEFAULT_HEIGHT = 80
     
     def __init__(self, content):
         self.content = content
