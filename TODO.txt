@@ -1,3 +1,25 @@
+#The_Web
 
-the web
+#Need to insert a pointer like turtle
+
+THE_START
+
+#variable for topicsearch
+TOPIC:(topicsearch)
+
+
+#Open youtube
+#Search Results for each term to give search results for 'SR'  that shows 'top 5 options' , 'top 5' , 'first 5'
+#Allow for infinite versions to be searched from above for the specific search to get top 5 most relevant results
+#REPEAT for each 'top 5 searches' creating an endless search
+#The future ones attached to them are updated with every search
+#Convert 'top 5 top options' into 'variable_of_options1'
+#This gives people the option to change their initial subscriptions
+#First search is 'variable of options1a1'
+#This should create an endless list where I can search one thing here that will give me the top 5 videos on youtube for that search
+  #More examples: Every youtube account is unique bc everyone searches different things that brings out results catered to them.
+  #Maybe add 'learn' to each of these initial searches. If its a a repeat twice in a row like search learn learn guitar , just show results for the first (and give options for both)
+  
+
+
 
