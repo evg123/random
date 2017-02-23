@@ -1,25 +1,33 @@
 #The_Web
 
 #Need to insert a pointer like turtle
+#Allow it to go in 5 angles (choices) in a direction of 100 pixels and a search option
 
 THE_START
 
 #variable for topicsearch
 TOPIC:(topicsearch)
 
+ #Filtering can be very important in the future, and i want to have a set way for it to be done. I need help with that though.
 
 #Open youtube
-#Search Results for each term to give search results for 'SR'  that shows 'top 5 options' , 'top 5' , 'first 5'
-#Allow for infinite versions to be searched from above for the specific search to get top 5 most relevant results
-#REPEAT for each 'top 5 searches' creating an endless search
+#Search Results for each term to give search results for 'SR'  that shows 'top 5 options' , 'top 5' , or 'first 5' etc
+#Allow for infinite versions to be searched from above from eachn version of the search to get t op 5 most relevant results
+#REPEAT for each 'top 5 searches' creating an endless search (until a certain amount for each search), like 5 branches from each 5 branch
 #The future ones attached to them are updated with every search
-#Convert 'top 5 top options' into 'variable_of_options1'
-#This gives people the option to change their initial subscriptions
-#First search is 'variable of options1a1'
+#Convert 'top 5 top options' into 'variable_of_options1' --> allowing for multiple search results customized for each user.  If a person wants to learn ABCs, 5 is too many options, give them audio or visual (1,2)
+#This gives people the option to change their initial subscriptions (always allow them to change recommended results (2 v 5, or recent vs popular)
+#First search is 'variable of options1a1a1' > allowing infinite combinations?
+#Filtering can be very important in the future, and i want to have a set way for it to be done. I need help with that though. 
 #This should create an endless list where I can search one thing here that will give me the top 5 videos on youtube for that search
-  #More examples: Every youtube account is unique bc everyone searches different things that brings out results catered to them.
-  #Maybe add 'learn' to each of these initial searches. If its a a repeat twice in a row like search learn learn guitar , just show results for the first (and give options for both)
-  
+#More examples: Every youtube account is unique bc everyone searches different things that brings out results catered to them.
+#Maybe add 'learn' to each of these initial searches. If its a a repeat twice in a row like search learn learn guitar , just show results for the first (and give options for both)
 
+#When there is a percent similiarity above a min amount of similarity from results, there should be a set percentage agreed upon to consider it as being worthy, then allowing the user to show more results for anything not shown > "(min_match_result_n%)"
 
+#Key words attached to each youtube video would be necessary to keep this afloat.
+#Hits per key word may be a way to get started, but I think there's a better way, especially with multiple key words
 
+#So say you want to learn about History>America>British View of America>[year(1500:Current)]
+  #I'd want someone to search history. American History would probably be top 5 choices, once clicked, person would want to search something not in the top 5, so search british view of america, allows for websites that only contain history and america for results with british view of america from those dates. This can create options to filter. Very basic but something that can be expanded upon? I think basketball would be easier though. We could change it to football, soccer, other sports, other games, videogames, etc.
+ 
