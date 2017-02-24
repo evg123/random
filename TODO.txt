@@ -31,3 +31,46 @@ TOPIC:(topicsearch)
 #So say you want to learn about History>America>British View of America>[year(1500:Current)]
   #I'd want someone to search history. American History would probably be top 5 choices, once clicked, person would want to search something not in the top 5, so search british view of america, allows for websites that only contain history and america for results with british view of america from those dates. This can create options to filter. Very basic but something that can be expanded upon? I think basketball would be easier though. We could change it to football, soccer, other sports, other games, videogames, etc.
  
+
+
+Feature list:
+First number is an id so that the feature can be referenced, not priority.
+References to feature X is noted as FX.
+-----------
+1
+Be able to search youtube for a string and parse the results.
+Read keywords from returned results and create a web data structure out of the top n results.
+    -high priority
+https://developers.google.com/youtube/v3/docs/search/list
+-----------
+2
+Figure out how to embed a youtube video into the way we draw the web.
+Probably not possible with turtle graphics, might need to move to something more sophisticated like unity.
+    -dependency on F1
+    -low priority
+-----------
+3
+Introduce the concept of different users so that we can remember their settings and customize the web we display for them.
+    -low priority
+-----------
+4
+Modify the display of the web to show nodes beyond the current set of next-hop nodes.
+Show the nodes going out a customizable number of hops from each next-hop node.
+We might not even want this, could add clutter to the display.
+    -low priority
+-----------
+5
+Add user interaction to detect mouse clicks
+    -dependency on F2, since this will likely be very different if we move away from turtle graphics
+    -high priority
+-----------
+6
+Add user interaction to accept search terms to modify current search results displayed.
+    -med priority
+-----------
+7
+Write a method of deciding similarity between two sets of search results.
+Should return a percentage or score within a defined range that represents how similar the result sets are.
+How do we measure similarity? Number of duplicate results? Number of keywords that overlap?
+    -low priority
+-----------
